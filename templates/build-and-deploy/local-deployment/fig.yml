@@ -1,0 +1,9 @@
+<%=project.name%>db:
+  image: mongo:3.0
+
+application:
+  image: bewilcox/<%=project.name%>
+  ports:
+    - "8080:8080"
+  links:
+    - <%=project.name%>db

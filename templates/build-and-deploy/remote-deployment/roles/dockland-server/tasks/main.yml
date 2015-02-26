@@ -1,0 +1,5 @@
+# Run the image
+- name: Deploy and run the Dockland application server
+  docker: image=bewilcox/<%=project.name%> name=<%=project.name%>-server ports=8080:8080 state=running
+
+
