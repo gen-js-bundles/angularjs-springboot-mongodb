@@ -2,7 +2,7 @@
 
 describe('Controllers Tests ', function () {
 
-    beforeEach(module('<%=project.name%>App'));
+    beforeEach(module('<%=project.name.a()%>App'));
 
     describe('LoginController', function () {
         var $scope;

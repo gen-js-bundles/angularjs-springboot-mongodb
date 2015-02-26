@@ -1,7 +1,7 @@
 /* globals $ */
 'use strict';
 
-angular.module('<%=project.name%>App')
+angular.module('<%=project.name.a()%>App')
     .directive('showValidation', function() {
         return {
             restrict: 'A',

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('<%=project.name%>App')
+angular.module('<%=project.name.a()%>App')
     .controller('MetricsController', function ($scope, MonitoringService) {
         $scope.metrics = {};
         $scope.updatingMetrics = true;

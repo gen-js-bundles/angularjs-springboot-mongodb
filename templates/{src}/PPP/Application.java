@@ -28,7 +28,7 @@ public class Application {
     private Environment env;
 
     /**
-     * Initializes <%=project.name%>.
+     * Initializes <%=project.name.a()%>.
      * <p/>
      * Spring profiles can be configured with a program arguments --spring.profiles.active=your-active-profile
      * <p/>

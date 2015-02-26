@@ -1,6 +1,6 @@
 
 <div>
-    <h2><span translate="<%=project.name%>App.book.detail.title">Book</span> {{book.id}}</h2>
+    <h2><span translate="<%=project.name.a()%>App.book.detail.title">Book</span> {{book.id}}</h2>
     <div class="table-responsive">
         <table class="table table-striped">
             <thead>
@@ -12,7 +12,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <span translate="<%=project.name%>App.book.title">Title</span>
+                        <span translate="<%=project.name.a()%>App.book.title">Title</span>
                     </td>
                     <td>
                         <input type="text" class="input-sm form-control" value="{{book.title}}" readonly>
@@ -20,7 +20,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <span translate="<%=project.name%>App.book.description">Description</span>
+                        <span translate="<%=project.name.a()%>App.book.description">Description</span>
                     </td>
                     <td>
                         <input type="text" class="input-sm form-control" value="{{book.description}}" readonly>
@@ -28,7 +28,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <span translate="<%=project.name%>App.book.publicationDate">PublicationDate</span>
+                        <span translate="<%=project.name.a()%>App.book.publicationDate">PublicationDate</span>
                     </td>
                     <td>
                         <input type="text" class="input-sm form-control" value="{{book.publicationDate}}" readonly>
@@ -36,7 +36,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <span translate="<%=project.name%>App.book.price">Price</span>
+                        <span translate="<%=project.name.a()%>App.book.price">Price</span>
                     </td>
                     <td>
                         <input type="text" class="input-sm form-control" value="{{book.price}}" readonly>

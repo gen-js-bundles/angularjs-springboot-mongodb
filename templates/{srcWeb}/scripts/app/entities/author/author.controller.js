@@ -2,7 +2,7 @@
     "use strict";
 
     angular
-        .module('<%=project.name%>App')
+        .module('<%=project.name.a()%>App')
         .controller('AuthorController', AuthorController);
 
     AuthorController.$inject = ['Author', 'DateUtils'];
@@ -73,7 +73,7 @@
 //
 //'use strict';
 //
-//angular.module('<%=project.name%>App')
+//angular.module('<%=project.name.a()%>App')
 //    .controller('AuthorController', function ($scope, Author) {
 //        $scope.authors = [];
 //        $scope.loadAll = function() {

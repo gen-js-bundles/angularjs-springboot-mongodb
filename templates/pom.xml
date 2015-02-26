@@ -10,11 +10,11 @@
     </parent>
 
     <groupId><%=project.package%></groupId>
-    <artifactId><%=project.name%></artifactId>
+    <artifactId><%=project.name.a()%></artifactId>
     <version>0.1.0</version>
     <packaging>war</packaging>
 
-    <name><%=project.name%></name>
+    <name><%=project.name.a()%></name>
 
     <prerequisites>
         <maven>3.0.0</maven>

@@ -1,2 +1,2 @@
-README for <%=project.name%>
+README for <%=project.name.a()%>
 ==========================

@@ -1,7 +1,7 @@
 - hosts: application
   roles:
-    - { role: <%=project.name%>-server }
+    - { role: <%=project.name.a()%>-server }
 
 - hosts: database
   roles:
-    - { role: <%=project.name%>-db }
+    - { role: <%=project.name.a()%>-db }

@@ -2,7 +2,7 @@
     "use strict";
 
     angular
-        .module('<%=project.name%>App')
+        .module('<%=project.name.a()%>App')
         .factory('Author', Author);
 
     Author.$inject = ['Restangular', 'DateUtils'];
@@ -92,7 +92,7 @@
 //
 //'use strict';
 //
-//angular.module('<%=project.name%>App')
+//angular.module('<%=project.name.a()%>App')
 //    .factory('Author', function ($resource) {
 //        return $resource('api/authors/:id', {}, {
 //            'query': { method: 'GET', isArray: true},

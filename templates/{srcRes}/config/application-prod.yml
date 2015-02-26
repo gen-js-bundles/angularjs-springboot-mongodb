@@ -6,9 +6,9 @@ spring:
         active: prod
     data:
         mongodb:
-            host: <%=project.name%>db
+            host: <%=project.name.a()%>db
             port: 27017
-            database: <%=project.name%>
+            database: <%=project.name.a()%>
 
 
     mail:
@@ -28,6 +28,6 @@ metrics:
         enabled: false
         host: localhost
         port: 2003
-        prefix: <%=project.name%>
+        prefix: <%=project.name.a()%>
 
 

@@ -5,7 +5,7 @@
     "use strict";
 
     angular
-        .module('<%=project.name%>App')
+        .module('<%=project.name.a()%>App')
         .config(config);
 
     config.$inject = ['$stateProvider', '$urlRouterProvider', '$httpProvider', '$locationProvider', '$translateProvider', 'tmhDynamicLocaleProvider', 'httpRequestInterceptorCacheBusterProvider', 'RestangularProvider', 'LoggerProvider', 'CONFIG'];

@@ -22,21 +22,21 @@ spring:
         protocol: smtp
         tls: false
         auth: false
-        from: <%=project.name%>@localhost
+        from: <%=project.name.a()%>@localhost
 
     messageSource:
         cacheSeconds: 1
 
 authentication:
     oauth:
-        clientid: <%=project.name%>app
+        clientid: <%=project.name.a()%>app
         secret: mySecretOAuthSecret
         # Token is valid 30 minutes
         tokenValidityInSeconds: 1800
 
 swagger:
-    title: <%=project.name%> API
-    description: <%=project.name%> applications and beyond!
+    title: <%=project.name.a()%> API
+    description: <%=project.name.a()%> applications and beyond!
     termsOfServiceUrl: http://jhipster.github.io/
     contact:
     license: Apache 2.0

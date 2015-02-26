@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('<%=project.name%>App')
+angular.module('<%=project.name.a()%>App')
     .factory('ConfigurationService', function ($rootScope, $filter, $http) {
         return {
             get: function() {

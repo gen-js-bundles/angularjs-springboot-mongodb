@@ -2,7 +2,7 @@
     "use strict";
 
     angular
-        .module('<%=project.name%>App')
+        .module('<%=project.name.a()%>App')
         .controller('LanguageController',LanguageController);
 
     LanguageController.$inject = ['$translate', 'Language'];

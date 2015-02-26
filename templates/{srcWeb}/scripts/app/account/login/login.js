@@ -1,13 +1,13 @@
 'use strict';
 
-angular.module('<%=project.name%>App')
+angular.module('<%=project.name.a()%>App')
     .config(function ($stateProvider) {
         $stateProvider
             .state('login', {
                 parent: 'account',
                 url: '/login',
                 data: {
-                    roles: [], 
+                    roles: [],
                     pageTitle: 'login.title'
                 },
                 views: {

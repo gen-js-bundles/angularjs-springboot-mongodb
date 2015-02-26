@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('<%=project.name%>App')
+angular.module('<%=project.name.a()%>App')
     .config(function ($stateProvider) {
         $stateProvider
             .state('author', {
@@ -8,7 +8,7 @@ angular.module('<%=project.name%>App')
                 url: '/author',
                 data: {
                     roles: ['ROLE_USER'],
-                    pageTitle: '<%=project.name%>App.author.home.title'
+                    pageTitle: '<%=project.name.a()%>App.author.home.title'
                 },
                 views: {
                     'content@': {
@@ -28,7 +28,7 @@ angular.module('<%=project.name%>App')
                 url: '/author/:id',
                 data: {
                     roles: ['ROLE_USER'],
-                    pageTitle: '<%=project.name%>App.author.detail.title'
+                    pageTitle: '<%=project.name.a()%>App.author.detail.title'
                 },
                 views: {
                     'content@': {

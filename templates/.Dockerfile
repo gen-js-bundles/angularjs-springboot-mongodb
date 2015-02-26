@@ -20,7 +20,7 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
 # Deploy the application (application server embedded)
 #######################################################
-ADD target/<%=project.name%>-*.war <%=project.name%>/<%=project.name%>.war
+ADD target/<%=project.name.a()%>-*.war <%=project.name.a()%>/<%=project.name.a()%>.war
 
 # Port exposition
 ##################
@@ -28,4 +28,4 @@ EXPOSE 8080
 
 # Start the application
 #########################
-CMD java -jar <%=project.name%>/<%=project.name%>.war --spring.profiles.active=prod
+CMD java -jar <%=project.name.a()%>/<%=project.name.a()%>.war --spring.profiles.active=prod

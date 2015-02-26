@@ -2,7 +2,7 @@
 
 describe('Directive Tests ', function () {
 
-    beforeEach(module('<%=project.name%>App'));
+    beforeEach(module('<%=project.name.a()%>App'));
 
     var elm, scope, $httpBackend;
 

@@ -1,8 +1,8 @@
 {
   "generator-jhipster": {
-    "baseName": "<%=project.name%>",
+    "baseName": "<%=project.name.a()%>",
     "packageName": "<%=project.package%>",
-    "packageFolder": "org/<%=project.name%>",
+    "packageFolder": "org/<%=project.name.a()%>",
     "authenticationType": "oauth2",
     "hibernateCache": "no",
     "clusteredHttpSession": "no",

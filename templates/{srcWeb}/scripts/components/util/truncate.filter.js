@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('<%=project.name%>App')
+angular.module('<%=project.name.a()%>App')
     .filter('characters', function () {
         return function (input, chars, breakOnWord) {
             if (isNaN(chars)) {

@@ -1,3 +1,3 @@
 # Run the image
-- name: Deploy and run the Dockland Database
-  docker: image=mongo:3.0 name=<%=project.name%>-db ports=27017:27017 state=running
+- name: Deploy and run the <%=project.name.A()%> Database
+  docker: image=mongo:3.0 name=<%=project.name.a()%>-db ports=27017:27017 state=running

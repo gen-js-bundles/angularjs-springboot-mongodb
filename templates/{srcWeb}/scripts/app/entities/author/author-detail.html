@@ -1,6 +1,6 @@
 
 <div>
-    <h2><span translate="<%=project.name%>App.author.detail.title">Author</span> {{detailCtrl.author.id}}</h2>
+    <h2><span translate="<%=project.name.a()%>App.author.detail.title">Author</span> {{detailCtrl.author.id}}</h2>
     <div class="table-responsive">
         <table class="table table-striped">
             <thead>
@@ -12,7 +12,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <span translate="<%=project.name%>App.author.name">Name</span>
+                        <span translate="<%=project.name.a()%>App.author.name">Name</span>
                     </td>
                     <td>
                         <input type="text" class="input-sm form-control" value="{{detailCtrl.author.name}}" readonly>
@@ -20,7 +20,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <span translate="<%=project.name%>App.author.birthDate">BirthDate</span>
+                        <span translate="<%=project.name.a()%>App.author.birthDate">BirthDate</span>
                     </td>
                     <td>
                         <input type="text" class="input-sm form-control" value="{{detailCtrl.author.birthDate}}" readonly>

@@ -18,6 +18,6 @@ echo '##########################'
 echo '#  DOCKER IMAGE BUILD    #'
 echo '##########################'
 # Build Docker versionned image
-docker build --tag bewilcox/<%=project.name%>:$APP_VERSION --rm=true .
+docker build --tag bewilcox/<%=project.name.a()%>:$APP_VERSION --rm=true .
 # Build Docker image for the latest version
-docker build --tag bewilcox/<%=project.name%> --rm=true .
+docker build --tag bewilcox/<%=project.name.a()%> --rm=true .

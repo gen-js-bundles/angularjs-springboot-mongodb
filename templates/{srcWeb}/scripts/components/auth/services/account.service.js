@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('<%=project.name%>App')
+angular.module('<%=project.name.a()%>App')
     .factory('Account', function Account($resource) {
         return $resource('api/account', {}, {
             'get': { method: 'GET', params: {}, isArray: false,

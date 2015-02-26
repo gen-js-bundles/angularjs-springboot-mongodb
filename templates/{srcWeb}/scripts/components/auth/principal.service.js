@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('<%=project.name%>App')
+angular.module('<%=project.name.a()%>App')
     .factory('Principal', function Principal($q, Account) {
         var _identity,
             _authenticated = false;

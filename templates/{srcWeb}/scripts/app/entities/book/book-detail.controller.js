@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('<%=project.name%>App')
+angular.module('<%=project.name.a()%>App')
     .controller('BookDetailController', function ($scope, $stateParams, Book) {
         $scope.book = {};
         $scope.load = function (id) {

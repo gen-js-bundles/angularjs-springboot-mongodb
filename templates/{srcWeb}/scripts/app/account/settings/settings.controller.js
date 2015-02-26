@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('<%=project.name%>App')
+angular.module('<%=project.name.a()%>App')
     .controller('SettingsController', function ($scope, Principal, Auth) {
         $scope.success = null;
         $scope.error = null;

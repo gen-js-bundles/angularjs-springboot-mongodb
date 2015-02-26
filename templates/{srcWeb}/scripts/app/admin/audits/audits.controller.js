@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('<%=project.name%>App')
+angular.module('<%=project.name.a()%>App')
     .controller('AuditsController', function ($scope, $translate, $filter, AuditsService) {
         $scope.onChangeDate = function () {
             var dateFormat = 'yyyy-MM-dd';

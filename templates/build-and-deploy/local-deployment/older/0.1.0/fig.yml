@@ -1,9 +1,9 @@
-<%=project.name%>db:
+<%=project.name.a()%>db:
   image: mongo:3.0
 
 application:
-  image: bewilcox/<%=project.name%>:0.1.0
+  image: bewilcox/<%=project.name.a()%>:0.1.0
   ports:
     - "8080:8080"
   links:
-    - <%=project.name%>db
+    - <%=project.name.a()%>db

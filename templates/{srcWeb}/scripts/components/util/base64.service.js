@@ -1,7 +1,7 @@
 /*jshint bitwise: false*/
 'use strict';
 
-angular.module('<%=project.name%>App')
+angular.module('<%=project.name.a()%>App')
     .service('Base64', function () {
         var keyStr = 'ABCDEFGHIJKLMNOP' +
             'QRSTUVWXYZabcdef' +

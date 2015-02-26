@@ -1,5 +1,5 @@
 {
-    "<%=project.name%>App": {
+    "<%=project.name.a()%>App": {
         "book" : {
             "home": {
                 "title": "Books",

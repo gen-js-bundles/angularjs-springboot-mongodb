@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('<%=project.name%>App')
+angular.module('<%=project.name.a()%>App')
     .directive('activeMenu', function($translate, $locale, tmhDynamicLocale) {
         return {
             restrict: 'A',

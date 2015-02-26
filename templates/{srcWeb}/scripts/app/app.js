@@ -1,7 +1,7 @@
 (function (){
     'use strict';
 
-    angular.module('<%=project.name%>App', [
+    angular.module('<%=project.name.a()%>App', [
         'LocalStorageModule',
         'tmh.dynamicLocale',
         'ngResource',

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('<%=project.name%>App')
+angular.module('<%=project.name.a()%>App')
     .controller('BookController', function ($scope, Book) {
         $scope.books = [];
         $scope.loadAll = function() {

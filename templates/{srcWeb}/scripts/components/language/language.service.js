@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('<%=project.name%>App')
+angular.module('<%=project.name.a()%>App')
     .factory('Language', function ($q, $http, $translate, LANGUAGES) {
         return {
             getCurrent: function () {
